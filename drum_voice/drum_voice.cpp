@@ -33,7 +33,7 @@ void AudioCallback(AudioHandle::InputBuffer in,
 
   for(size_t i = 0; i < size; i++) {
     if (triggered) {
-	  bd.SetAccent(0.9);
+      bd.SetAccent(0.9);
       bd.SetDirtiness(hw.GetAdcValue(CV_1));
       bd.SetDecay(hw.GetAdcValue(CV_5));
       bd.SetFmEnvelopeAmount(hw.GetAdcValue(CV_2));
@@ -47,15 +47,15 @@ void AudioCallback(AudioHandle::InputBuffer in,
 }
 
 int main(void) {
-	hw.Init();
-	hw.SetAudioBlockSize(4);  // Number of samples handled per callback
-	hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
+  hw.Init();
+  hw.SetAudioBlockSize(4);  // Number of samples handled per callback
+  hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
 
-    bd.Init(48000);
-    bd.SetFreq(50.f);
-    bd.SetDirtiness(.5f);
-    bd.SetDecay(.1f);
-    bd.SetFmEnvelopeAmount(.6f);
-	hw.StartAudio(AudioCallback);
-  	while(1) {}
+  bd.Init(48000);
+  bd.SetFreq(50.f);
+  bd.SetDirtiness(.5f);
+  bd.SetDecay(.1f);
+  bd.SetFmEnvelopeAmount(.6f);
+  hw.StartAudio(AudioCallback);
+  while(1) {}
 }
