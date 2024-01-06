@@ -1,4 +1,4 @@
-
+{
   "tasks": [
     {
       "command": "make clean; make",
