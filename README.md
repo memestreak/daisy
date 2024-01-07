@@ -1,16 +1,28 @@
-# daisy
+# Daisy
 Daisy microcontroller stuff
 
-`DaisySP` and `libDaisy` must be built before anything else.
+## Setup
 
-**drum_voice**
+`DaisySP` and `libDaisy` submodules must be checked out and built before
+anything else.
+
+`git submodule update --init --recursive`
+
+Build these by running `make` in each directory.
+
+## Projects
+
+### `drum_voice`
 
 A triggerable drum multiple potentiometer based parameters. Created
 for the Patch SM hardware.
 
-### Appendix
+## Appendix
 
-Initial submodule addition:
+Notes for myself.
+
+### Submodule Additions
+
 ```
 git submodule add git@github.com:electro-smith/DaisySP
 git submodule add git@github.com:pichenettes/stmlib
