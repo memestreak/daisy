@@ -1,9 +1,9 @@
 [submodule "DaisySP"]
-	path = DaisySP
+	path = extern/DaisySP
 	url = git@github.com:electro-smith/DaisySP
 [submodule "stmlib"]
-	path = stmlib
+	path = extern/stmlib
 	url = git@github.com:pichenettes/stmlib
 [submodule "libDaisy"]
-	path = libDaisy
+	path = extern/libDaisy
 	url = git@github.com:electro-smith/libDaisy

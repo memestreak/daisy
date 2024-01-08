@@ -5,8 +5,8 @@ TARGET = drum_voice
 CPP_SOURCES = drum_voice.cpp
 
 # Library Locations
-LIBDAISY_DIR = ../libDaisy/
-DAISYSP_DIR = ../DaisySP/
+LIBDAISY_DIR = ../extern/libDaisy/
+DAISYSP_DIR = ../extern/DaisySP/
 
 # Core location, and generic Makefile.
 SYSTEM_FILES_DIR = $(LIBDAISY_DIR)/core
